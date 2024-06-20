@@ -1,0 +1,47 @@
+<% if(utilizator){ %>
+    <h2>Bine ai venit, <%= utilizator.nume %> <%= utilizator.prenume%>!</h2>
+    <form action="/logout" method="post">
+        <button type="submit">Delogare</button>
+    </form>
+
+    <div class="butoane_conditionate">
+        <% if (utilizator.rol === 'admin') { %>
+            <form action="/creare-bd" method="get">
+                <button type="submit">Creare BD</button>
+            </form>
+        
+            <form action="/inserare-bd" method="get">
+                <button type="submit">Incarcare BD</button>
+            </form>
+        <% } %>
+    </div>
+<% } else { %>
+    <h2>Bine ai venit!</h2>
+<% } %>
+
+
+<h2>Produsele noastre: </h2>
+<div class="produse">
+    <% produse.forEach(produs => { %>
+        <div class="produs">
+            <img src="<%= produs.imagine %>" alt="<%= produs.nume %>" width="180px">
+            <br>
+            <p><%= produs.nume %> </p>
+            <p><%= produs.gramaj %> g </p>
+            <p class="pret">Preț:    <%= produs.pret %> Lei </p>
+            <br>
+            <% if(utilizator) { %>
+                <form action="/adaugare-cos" method="post">
+                    <input type="hidden" name="id" value="<%= produs.id %>">
+                    <button type="submit" class="cos">Adaugă în coș</button>
+                </form>
+            <% } else { %>
+                <form action="/adaugare-cos" method="post">
+                    <input type="hidden" name="id" value="<%= produs.id %>" disabled>
+                    <button type="button" onclick="alert('Vă rugăm să vă autentificați pentru a adăuga în coș')">Adaugă în coș</button>
+                </form>
+            <% } %>
+        </div>
+    <% }); %>
+</div>
+

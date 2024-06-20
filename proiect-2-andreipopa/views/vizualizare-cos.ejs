@@ -1,0 +1,48 @@
+<% if(utilizator){ %>
+    <div class="cos-container">
+        <h2>Coșul dumneavoastră de cumpărături:</h2>
+        <% if (cos.length > 0) { %>
+            <table class="produse-cos">
+                <thead>
+                    <tr>
+                        <th>Denumire produs</th>
+                        <th>Preț</th>
+                        <th>Gramaj</th>
+                        <th>Cantitate</th>
+                        <th>Pret Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% let total = 0; %>
+                    <% cos.forEach(produs => { %>
+                        <tr class="produs-cos">
+                            <td><%= produs.nume %></td>
+                            <td><%= produs.pret %> Lei</td>
+                            <td><%= produs.gramaj %> g</td>
+                            <td><%= produs.cantitate %></td>
+                            <td><%= produs.pret * produs.cantitate %> Lei</td>
+                        </tr>
+                        <% total += produs.pret * produs.cantitate; %>
+                    <% }); %>
+                </tbody>
+            </table>
+            <p class="suma-totala">Suma totală: <%= total.toFixed(2) %> Lei</p>
+            <div class="butoane_permanente">
+                <form action="/golire-cos" method="post">
+                    <button type="submit">Golește Coșul</button>
+                </form>
+                <form action="/" method="get">
+                    <button type="submit">Înapoi la produse</button>
+                </form>
+            </div>
+            
+        <% } else { %>
+            <h3 class="cos-gol">Coșul este gol.</h3>
+            <form action="/" method="get">
+                <button type="submit">Înapoi la produse</button>
+            </form>
+        <% } %>
+    </div>
+<% } else { %>
+    <h2>Trebuie mai întâi să vă autentificați pentru a putea vedea coșul de cumpărături!</h2>
+<% } %>

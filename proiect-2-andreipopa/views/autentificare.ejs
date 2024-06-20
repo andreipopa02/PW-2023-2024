@@ -1,0 +1,17 @@
+<div class="autentificare">
+    <h2>Autentificare</h2>
+    <form action="/verificare-autentificare" method="POST" class="form-autentificare">
+    
+        <label>Utilizator:</label>
+        <input type="text" name="utilizator" required><br><br>
+        
+        <label>Parolă:</label>
+        <input type="password" name="parola" required><br><br>
+        
+        <% if (mesajEroare) { %>
+            <p class="eroare"><%= mesajEroare %></p>
+        <% } %>
+
+        <button type="submit">Autentificare</button>
+    </form>
+</div>
