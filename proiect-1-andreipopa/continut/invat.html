@@ -1,0 +1,84 @@
+<div>
+  <aside>
+      <a href="#Sectiunea1"><h3>Secțiunea 1</h3></a>
+      <a href="#Sectiunea2"><h3>Secțiunea 2</h3></a>
+      <a href="#Sectiunea3"><h3>Secțiunea 3</h3></a>
+  </aside>
+
+  <section id="Sectiunea1">
+      <h2>Secțiunea 1</h2>
+      <p> Data și ora curentă </p> 
+      <button type="button" onclick="data()"> Afișează data și ora</button>
+      <p id="data"></p>
+
+      <p> URL curent </p> 
+      <button type="button" onclick="url()"> Afișează URL </button>
+      <p id="url"></p>
+
+      <p> Locația curentă </p> 
+      <button type="button" onclick="locatie()"> Afișează locația </button>
+      <p id="locatie"></p>
+
+      <p> Numele și versiunea browserului curent </p> 
+      <button type="button" onclick="browser_name_version()"> Afișează nume și versiune </button>
+      <p id="browser"></p>
+
+      <p> Sistemul de operare curent </p> 
+      <button type="button" onclick="sistem_de_operare()"> Afișează SO </button>
+      <p id="sistem_de_operare"></p>
+  </section>
+
+  <section id="Sectiunea2">
+    <h2>Secțiunea 2</h2>
+    <p>Provocare pentru toți sportivii: Desenați o gantera!</p>
+    <div class="section-content">
+        <div class="canvas-container">
+            <canvas onclick="desenare()" id="myCanvas"></canvas>
+        </div>
+        <form class="color-picker-container">
+          <p>Culoare bordură</p>  
+          <input type="color" id="borderColor" name="borderColor" value="#000000"><br><br>
+          <p>Culoare fundal</p>
+          <input type="color" id="backColor" name="backColor" value="#000000"><br><br>
+          <button type="button" onclick="stergeCanvas()">Șterge desen</button>
+        </form> 
+    </div>
+
+  </section>
+
+  <section id="Sectiunea3">
+    <h2>Secțiunea 3</h2>
+
+    <label for="culoare">Alegeți culoarea pentru coloană/rând </label>
+    <input type="color" id="tableColor" name="tableColor" value="#000000"><br><br>
+
+    <label for="pozitie">Specificați poziția (linie/coloană) pentru inserare:</label>
+    <input type="text" id="pozitie" name="pozitie"><br><br>
+
+    <button onclick="adaugaColoana()">Adaugă coloană</button>
+    <button onclick="adaugaRand()">Adaugă rând</button>
+
+    <table id="tabel">
+      <tr>
+        <td>Luni</td>
+        <td>Piept</td>
+      </tr>
+      <tr>
+        <td>Marți</td>
+        <td>Spate</td>
+      </tr>
+      <tr>
+        <td>Miercuri</td>
+        <td>Brațe</td>
+      </tr>
+      <tr>
+        <td>Joi</td>
+        <td>Picioare</td>
+      </tr>
+      <tr>
+        <td>Vineri</td>
+        <td>Abdomen</td>
+      </tr>
+    </table>
+  </section>
+</div>

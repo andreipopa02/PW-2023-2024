@@ -1,0 +1,59 @@
+<div class="inregitreaza">
+
+  <fieldset class="inregistreaza_info_generale">
+    <h2>Informații generale</h2>
+    <label>Nume utilizator:</label>
+    <input id="numeUtilizator" type="text" onkeyup="verificaCampuri()" placeholder="nume de utilizator"><br><br>
+    <label>Parola:</label>
+    <input id="parolaUtilizator" type="password" onkeyup="verificaCampuri()" placeholder="parola"><br><br>
+    <label>Nume:</label>
+    <input type="text" placeholder="nume"><br><br>
+    <label>Prenume:</label>
+    <input type="text" placeholder="prenume"><br><br>
+    <label>Email:</label>
+    <input type="email" placeholder="nume.prenume@student.tuiasi.ro"><br><br>
+    <label>Telefon:</label>
+    <input type="buttom" placeholder="telefon"><br><br>
+  </fieldset><br>
+
+  <fieldset class="inregistreaza_info_personale">
+      <h2>Informații persoanale</h2>
+      <label>Sexul:</label>
+          <select>
+              <option>Femeie</option>
+              <option>Bărbat</option>
+          </select><br><br>
+      <label>Mâncarea preferată:</label>
+          <input list="mancare">
+          <datalist id="mancare">
+              <option value="Fast Food"></option>
+              <option value="Paste"></option>
+              <option value="Pizza"></option>
+              <option value="Orez"></option>
+              <option value="Cartofi prăjiți"></option>
+              <option value="Desert"></option>
+              <option value="Salată"></option>
+              <option value="Fructe"></option>
+              <option value="Legume proaspete"></option>
+              <option value="Legume fierte"></option>
+          </datalist><br><br>
+      <label>Culoarea preferată:</label>
+          <input type="color"><br><br>
+      <label>Data nașterii:</label>
+          <input type="date"><br><br>
+      <label>Ora nașterii:</label>
+          <input type="time"><br><br>
+      <label>Vârstă:</label>
+          <input type="range"><br><br>
+      <label>Adresa paginii personale:</label>
+          <input type="url"><br><br>
+      <label>Descriere:</label>
+          <textarea cols="40" rows="2" 
+          placeholder="Spune-ne câte ceva despre tine și obiectivele tale în fitness"></textarea><br><br>
+  </fieldset><br>
+
+  <fieldset class="inregistreaza_buton">
+    <button id="butonInregistrare" disabled type="button" onclick="inregistreaza()">Înregistrează-te</button>
+  </fieldset>
+  
+</div>

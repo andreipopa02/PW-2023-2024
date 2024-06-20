@@ -1,0 +1,47 @@
+<svg>
+  <!--Omul-->
+  <g class="desen_om"> 
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="yellow" />  
+        <stop offset="100%" stop-color="red" />
+      </linearGradient>
+    </defs>
+    <path d="M450 60 L185 200 L330 200 Z" fill="url(#grad1)"/>
+    <path d="M50 60 L315 200 L170 200 Z" fill="url(#grad1)"/>
+    <rect width="26"  height="70" x="237" y="80" fill="url(#grad1)" />
+    <ellipse cx="249" cy="80" rx="30" ry="40" fill="url(#grad1)" />
+    <polygon points="200,140 300,140 330,200 330,280 170,280 170,200" fill="url(#grad1)" />
+    <line x1="20" y1="120" x2="100" y2="20" style="stroke:gray;stroke-width:12" />
+    <line x1="400" y1="20" x2="480" y2="120" style="stroke:gray;stroke-width:12" />
+    <circle cx="60" cy="70" r="20" fill="url(#grad1)"/>
+    <circle cx="440" cy="70" r="20" fill="url(#grad1)"/>
+  </g>
+  <!-- Haltera-->
+  <g class="desen_haltera"> 
+    <rect width="299" height="10"  x="100" y="355" rx="20" ry="20" fill="RGB(60,60,60)" stroke-width="3" stroke="gray"/>
+    <rect width="24"  height="120" x="120" y="300" rx="10" ry="10" fill="blue" >
+      <animate attributeName="fill" from="red" to="blue" dur="7s" repeatCount="indefinite" begin="0s"/> 
+      <animate attributeName="fill" from="blue" to="red" dur="7s" repeatCount="indefinite" begin="7s"/></rect>
+    <rect width="18"  height="100" x="105" y="310" rx="10" ry="10" fill="red">
+      <animate attributeName="fill" from="blue" to="red" dur="7s" repeatCount="indefinite" begin="0s"/>
+      <animate attributeName="fill" from="red" to="blue" dur="7s" repeatCount="indefinite" begin="7s"/></rect>
+    <rect width="24"  height="120" x="356" y="300" rx="10" ry="10" fill="blue">
+      <animate attributeName="fill" from="red" to="blue" dur="7s" repeatCount="indefinite" begin="0s"/>
+      <animate attributeName="fill" from="blue" to="red" dur="7s" repeatCount="indefinite" begin="7s"/></rect>
+    <rect width="18"  height="100" x="376" y="310" rx="10" ry="10" fill="red" >
+      <animate attributeName="fill" from="blue" to="red" dur="7s" repeatCount="indefinite" begin="0s"/>
+      <animate attributeName="fill" from="red" to="blue" dur="7s" repeatCount="indefinite" begin="7s"/></rect>
+      <animateTransform attributeName="transform" type="translate" dur="7s" values="0 0; 0 100; 0 0" repeatCount="indefinite"/>
+  </g>
+  <!--Text-->
+  <g class="desen_text"> 
+    <text id="TextElement" x="160" y="340" style="font-family:Verdana;font-size:32;"> Hai la sală!
+      <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+      <animateTransform attributeName="transform" type="translate" dur="7s" values="0 0; 0 100; 0 0" repeatCount="indefinite" begin="0s"/>
+    </text> 
+  </g>
+
+</svg>
+
+    
