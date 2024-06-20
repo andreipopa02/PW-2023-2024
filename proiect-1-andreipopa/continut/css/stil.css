@@ -1,0 +1,337 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; 
+}
+
+header {
+    background-color: rgb(198, 174, 193);
+    color: white;
+    text-align: center;
+    padding: auto; 
+}
+
+main {
+    flex: 1; 
+}
+
+footer {
+    background-color: rgb(198, 174, 193);
+    color: white;
+    text-align: center;
+    padding: auto; 
+    margin-top: auto; 
+}
+  
+nav {
+    font-weight: bold;
+    padding: 25px;
+}
+    
+nav a {
+    display: inline-block;
+    font-size: x-large;
+    padding: 10px 20px; 
+    color: white;
+    text-decoration: none;
+    border: 1px solid transparent; 
+    border-radius: 5px; 
+}   
+
+nav a:hover {
+    background-color: rgb(75, 89, 104); 
+    border-color: white; 
+    color: white;
+}
+
+@media all and (max-width: 800px) {
+    nav a {
+        display: block;
+    } 
+}
+
+@media all and (max-width: 1000px)
+{
+    .despre_alte_linkuri{
+        display: block;
+    }
+}
+
+table {
+    margin: 10px 20px;
+    border:1px solid black;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(240, 248, 255), rgb(206, 226, 243));
+  }
+
+table td{
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgb(224, 214, 222); 
+ }
+
+h1, h2, h3{
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 5px red;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p::first-letter {
+    font-weight: bold;
+}
+
+#logo {
+    padding: 10px;
+    float: left;
+}
+
+.titlu {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.despre_descriere, .despre_alte_linkuri {
+    margin: 60px auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+.descriere_stanga, .despre_planuri_antrenament{
+    width: 55%;
+}
+
+.descriere_dreapta, .planuri_antrenamnt_img {
+    width: 35%;
+}
+
+.despre_newsletter{
+    border: 2px dashed black;
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%;
+    background-image: linear-gradient(to right, rgb(240, 248, 255), rgb(206, 226, 243));
+    text-align: center;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+.despre_newsletter .acord:hover, .buton_abonare_inregistrare:hover{
+    font-weight: bold;
+}
+
+.buton_abonare_inregistrare{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aqua;
+}
+
+.despre_plan_5_zile {
+    margin-top: 70px;
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+  
+.despre_plan_5_zile ol {
+    text-align: left; 
+    display: inline-block;
+}
+
+.despre_map_wiki{
+    text-align: center; 
+}
+
+.despre_map{
+    width: 40%;
+    height: 500px;
+}
+
+.despre_wiki{
+    width:80%;
+    height:800px;
+}
+
+.video_pagina{
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif;
+    margin: 70px auto; 
+}
+
+.video_intro{
+    width: 70%;
+    display: inline-block;
+    text-align: center;
+}
+
+.video_episoade{
+    margin-top: 40px;
+    font-size: 28px;
+}
+
+.video_clip{
+    border: 0;
+    width: 928px;
+    height: 522px; 
+}
+
+fieldset{
+    width: 50%;
+    margin: 0px auto;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(240, 248, 255), rgb(206, 226, 243));
+    box-shadow: 10px 10px 5px lightblue;
+    border-color: transparent;
+}
+
+fieldset:hover, section:hover{
+    background-image: linear-gradient(to right, rgb(105, 134, 120), rgb(218, 221, 220));
+    box-shadow: 10px 10px 5px lightgreen;
+}
+
+.inregistreaza_buton{
+    margin-bottom: 30px;
+}
+
+svg{
+    margin: 50px auto;
+    width: 100%;
+    height:600px;
+}
+
+.acasa{
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    padding: 10px;
+    width: 80%;
+    
+}
+
+.acasa > div {
+    background-image: linear-gradient(to right, rgb(240, 248, 255), rgb(206, 226, 243));
+    text-align: center;
+    padding: 20px;
+    border: 2px dotted gray;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px lightblue;
+
+}
+
+.acasa > div > h3 > a{
+    text-decoration: none;
+    color:blueviolet;
+}
+
+.acasa > div > h3 > a:hover{
+    color: violet;
+}
+
+.acasa > div:not(p){
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.contact{
+    color: rgb(71, 61, 61);
+}
+
+aside {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+}
+
+aside a {
+    margin: 0 10px;
+}
+
+button{
+    background-image: linear-gradient(to right, rgb(240, 248, 255), rgb(206, 226, 243));
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+  }
+  
+button:hover{
+    background-image: linear-gradient(to right, rgb(105, 134, 120), rgb(218, 221, 220));
+  }
+
+.cumparaturi{
+    text-align: center;
+}
+
+section {
+    background-image: linear-gradient(to right, rgb(240, 248, 255), rgb(206, 226, 243));
+    border:1px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align:center;
+    overflow:hidden;
+    padding-bottom: 10px;
+}
+
+#myCanvas {
+    border:1px solid black;
+    background-color: white;
+}
+
+section .canvas-container {
+    float: left;
+    width: 70%; 
+}
+
+section .color-picker-container {
+    float: right;
+    width: 30%; 
+}
+
+#Sectiunea1 p{
+    color:darkslateblue;
+}
+
+.persoane{
+    color: black;
+    font: x-large;
+}
+
+#tabel table{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+}
+#tabel table td{
+    padding: 0px 10px;    
+}
+
+.formular {
+    display: inline-block;
+    align-items: center; 
+}
+
+
+
+#tabelCumparaturi {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabelCumparaturi th, #tabelCumparaturi td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabelCumparaturi th {
+    background-image: linear-gradient(to right, rgb(240, 248, 255), rgb(206, 226, 243));
+}

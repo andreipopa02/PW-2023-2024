@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE persoane [
+<!ELEMENT persoane (persoana+)>
+<!ELEMENT persoana (nume, prenume, varsta, adresa, telefon, email)>
+<!ELEMENT adresa (strada, numar, localitate, judet, tara)>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT prenume (#PCDATA)>
+<!ELEMENT varsta (#PCDATA)>
+<!ELEMENT strada (#PCDATA)>
+<!ELEMENT numar (#PCDATA)>
+<!ELEMENT localitate (#PCDATA)>
+<!ELEMENT judet (#PCDATA)>
+<!ELEMENT tara (#PCDATA)>
+<!ELEMENT telefon (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST persoana id CDATA #REQUIRED>
+]>
+<persoane>
+    <persoana id="1">
+        <nume>Popa</nume>
+        <prenume>Andrei</prenume>
+        <varsta>21</varsta>
+        <adresa>
+            <strada>Biserica Vehce</strada>
+            <numar>31</numar>
+            <localitate>Urecheni</localitate>
+            <judet>Neamt</judet>
+            <tara>Romania</tara>
+        </adresa> 
+        <telefon>0787000214</telefon>
+        <email>andrei.popa7@student.tuiasi.ro</email>
+    </persoana>
+    <persoana id="2">
+        <nume>Mihaluca</nume>
+        <prenume>Madalina</prenume>
+        <varsta>21</varsta>
+        <adresa>
+            <strada>Florilor</strada>
+            <numar>11</numar>
+            <localitate>Roman</localitate>
+            <judet>Neamt</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <telefon>0755258258</telefon>
+        <email>madalina.mihaluca@student.tuiasi.ro</email>
+    </persoana>
+    <persoana id="3">
+        <nume>Popescu</nume>
+        <prenume>Costel</prenume>
+        <varsta>31</varsta>
+        <adresa>
+            <strada>Bdul. Tudor Vladimirescu</strada>
+            <numar>10B</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <telefon>0748587589</telefon>
+        <email>costel.popescu@student.tuiasi.ro</email>
+    </persoana>
+    <persoana id="4">
+        <nume>Stan</nume>
+        <prenume>Vasile</prenume>
+        <varsta>25</varsta>
+        <adresa>
+            <strada>Aleea. Prof. Vasile Petrescu</strada>
+            <numar>1</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <telefon>0755689658</telefon>
+        <email>vasile.stan@student.tuiasi.ro</email>
+    </persoana>
+    <persoana id="5">
+        <nume>Timofte</nume>
+        <prenume>Alex</prenume>
+        <varsta>20</varsta>
+        <adresa>
+            <strada>Aleea. Prof. Vasile Petrescu</strada>
+            <numar>2</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <telefon>0755489658</telefon>
+        <email>alex.timofte@student.tuiasi.ro</email>
+    </persoana>
+    <persoana id="6">
+        <nume>Apopei</nume>
+        <prenume>Bogdan</prenume>
+        <varsta>21</varsta>
+        <adresa>
+            <strada>Lalelelor</strada>
+            <numar>243</numar>
+            <localitate>Miroslava</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <telefon>0755489111</telefon>
+        <email>bogdan.apopei@student.tuiasi.ro</email>
+    </persoana>
+</persoane>

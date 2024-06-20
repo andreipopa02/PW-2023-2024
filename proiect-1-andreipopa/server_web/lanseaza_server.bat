@@ -1,0 +1,1 @@
+C:\Users\qwert\AppData\Local\Programs\Python\Python310\python.exe server_web/server_web.py
