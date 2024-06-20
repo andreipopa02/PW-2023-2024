@@ -1,0 +1,22 @@
+<% if(utilizator){ %>
+<h2>Completează chestionarul și măsoară-ți cultura generală!</h2>
+
+<form action="/rezultat-chestionar" method="post">
+    <div class="chestionar">
+        <% intrebari.forEach(function(intrebare, index) { %>
+            <div class="intrebare">
+                <h3><%= intrebare.intrebare %></h3>
+                <% intrebare.variante.forEach(function(varianta, vIndex) { %>
+                    <label>
+                        <input type="radio" name="intrebare<%= index %>" value="<%= vIndex %>">
+                        <%= vIndex + 1 %>. <%= varianta %>
+                    </label><br>
+                <% }); %>
+            </div>
+        <% }); %>
+    </div>
+    <button type="submit">Trimite</button>
+</form>
+<% } else { %>
+    <h2>Trebuie mai întâi să vă autentificați pentru a putea accesa chestionatul!</h2>
+<% } %>

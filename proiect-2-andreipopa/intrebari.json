@@ -1,0 +1,52 @@
+[
+    {
+        "intrebare": "1. Care este numele comun al plantei cu denumirea științifică Rosa centifolia?",
+        "variante": ["Trandafir de mai", "Gutui", "Măr", "Lămâiță"],
+        "corect": 0
+    },
+    {
+        "intrebare": "2. Ce plantă este cunoscută pentru proprietățile sale vindecătoare și este utilizată frecvent în medicină?",
+        "variante": ["Aloe vera", "Cactus", "Bambus", "Bujor"],
+        "corect": 0
+    },
+    {
+        "intrebare": "3. Care dintre următoarele plante este cunoscută pentru aroma sa puternică și este folosită în industria parfumurilor?",
+        "variante": ["Lavandă", "Patlagină", "Orhidee", "Iasomie"],
+        "corect": 0
+    },
+    {
+        "intrebare": "4. Care este numele comun al plantei cu denumirea științifică Papaver somniferum?",
+        "variante": ["Mac", "Crușin", "Albăstrea", "Sunătoare"],
+        "corect": 0
+    },
+    {
+        "intrebare": "5. Care dintre următoarele plante este cunoscută pentru a avea proprietăți calmante și de relaxare?",
+        "variante": ["Levănțică", "Mușcate", "Patlagina", "Aloe vera"],
+        "corect": 0
+    },
+    { 
+        "intrebare": "6. Care este denumirea științifică a trandafirului?",
+        "variante": ["Rosa gallica", "Rosa canina", "Rosa damascena", "Rosa rubiginosa"],
+        "corect": 2 
+    },
+    {
+        "intrebare": "7. Care dintre următoarele plante este cunoscută pentru a atrage fluturi și alte polenizatori?",
+        "variante": ["Lavandă", "Cactuși", "Nufăr", "Zambila"],
+        "corect": 0
+    },
+    {
+        "intrebare": "8. Ce plantă este adesea asociată cu Crăciunul?",
+        "variante": ["Crinul", "Brăduțul", "Orhideea", "Macul"],
+        "corect": 1
+    },
+    {
+        "intrebare": "9. Ce plantă este utilizată pentru a produce ceaiul verde?",
+        "variante": ["Camellia sinensis", "Lavandula angustifolia", "Rosa rugosa", "Ficus elastica"],
+        "corect": 0
+    },
+    {
+        "intrebare": "10. Ce plantă este cunoscută pentru frunzele sale mari și rotunde și este adesea asociată cu ținutele formale sau ceremoniale?",
+        "variante": ["Lalea", "Monstera", "Ficus", "Dracena"],
+        "corect": 1
+    }
+]

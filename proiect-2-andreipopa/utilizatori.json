@@ -1,0 +1,37 @@
+[
+    {
+        "utilizator": "andrei",
+        "parola": "andrei",
+        "nume": "Andrei",
+        "prenume": "Popa",
+        "rol": "user"
+    },
+    {
+        "utilizator": "maria",
+        "parola": "maria",
+        "nume": "Maria",
+        "prenume": "Ionescu",
+        "rol": "user"
+    },
+    {
+        "utilizator": "admin",
+        "parola": "admin",
+        "nume": "administrator",
+        "prenume": " ",
+        "rol": "admin"
+    },
+    {
+        "utilizator": "ion",
+        "parola": "ion",
+        "nume": "Ion",
+        "prenume": "Georgescu",
+        "rol": "user"
+    },
+    {
+        "utilizator": "vasile",
+        "parola": "vasile",
+        "nume": "Vasile",
+        "prenume": "Petrescu",
+        "rol": "user"
+    }
+]

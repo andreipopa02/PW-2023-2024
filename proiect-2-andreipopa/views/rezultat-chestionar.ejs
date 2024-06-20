@@ -1,0 +1,16 @@
+<h3>Rezultate Chestionar</h3>
+
+<% if (numarRaspunsuriCorecte > 5) { %>
+    <p class="succes">Felicitări! Ai răspuns corect la <%= numarRaspunsuriCorecte %> întrebări din <%= listaIntrebari.length %>!</p> 
+<% } else { %>
+    <p class="esec">Upss! Ai răspuns corect la <%= numarRaspunsuriCorecte %> întrebări din <%= listaIntrebari.length %>. Continuă să exersezi!</p>
+<% } %>
+<div class="rezultate">
+    <% listaIntrebari.forEach(function(intrebare, index) { %>
+       <div class="raspuns <%= parseInt(raspunsuriPrimite['intrebare' + index]) === intrebare.corect ? 'corect' : 'gresit' %>">
+            <strong><%= intrebare.intrebare %></strong><br>
+            Răspunsul tău: <%= intrebare.variante[raspunsuriPrimite['intrebare' + index]] %><br>
+            Răspuns corect: <%= intrebare.variante[intrebare.corect] %>
+        </div>
+    <% }); %>
+</div>

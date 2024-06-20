@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background-color: rgb(240, 248, 255);
+}
+
+header {
+    background-color: rgb(206, 226, 243);
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    flex: 1; 
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(206, 226, 243);
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-block, .chestionar, .rezultate  {
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px 50px;
+    padding: 10px;
+    width: 80%;
+}
+
+.footer-block > div, .chestionar > div, .rezultate > div  {
+    background-image: linear-gradient(to right, rgb(240, 248, 255), rgb(206, 226, 243));
+    text-align: left;
+    padding: 10px;
+    border: 1px dotted gray;
+    border-radius: 10px;
+}
+
+.raspuns.gresit {
+    background-image: linear-gradient(to right, #ffcdd2, #ef9a9a);
+}
+
+.raspuns.gresit:hover {
+    background-image: linear-gradient(to right, #ef9a9a, #ffcdd2);
+}
+
+.raspuns.corect {
+    background-image: linear-gradient(to right, #c8e6c9, #a5d6a7);
+}
+
+.raspuns.corect:hover {
+    background-image: linear-gradient(to right, #a5d6a7, #c8e6c9);
+}
+
+.succes {
+    color: green;
+    font-size: x-large;
+    text-align: center;
+}
+
+.esec {
+    color: red;
+    font-size: x-large;
+    text-align: center;
+}
+
+.reserved {
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-block > div:hover, .chestionar > div:hover, button:hover {
+    background-image: linear-gradient(to right, rgb(206, 226, 243), rgb(240, 248, 255));
+}
+
+button {
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(240, 248, 255), rgb(206, 226, 243));
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(101, 150, 117);
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    color:rgb(49, 51, 53);
+}
+
+.cos {
+    color:#3f8144;
+}
+
+h3 {
+    text-align: center;
+    color:rgb(49, 51, 53);
+}
+
+h2 {
+    padding: 20px;
+    text-align: center;
+    color:rgb(49, 51, 53);
+}
+    
+nav a {
+    display: inline-block;
+    font-weight: bold;
+    font-size: x-large;
+    color:rgb(49, 51, 53);
+    background-image: linear-gradient(to right, rgb(240, 248, 255), rgb(206, 226, 243));
+    text-decoration: none;
+    padding: 10px 20px; 
+    margin-top: 10px; 
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px dotted gray;
+    border-radius: 10px;
+}   
+
+nav a:hover {
+    background-image: linear-gradient(to right, rgb(206, 226, 243), rgb(240, 248, 255));
+}
+
+
+.img-produse {
+    width: 180px;
+    height: 320px;
+}
+
+.produse {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
+}
+
+.produs {
+    text-align: center;
+    background-color: white;
+    text-align: left;
+    padding: 10px;
+    border: 1px dotted gray;
+    border-radius: 10px;
+}
+
+.produs img {
+    display: block; 
+    margin: 0 auto;
+}
+
+div p {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.pret {
+    color:#3f8144;
+    font-size: x-large;
+}
+
+.butoane_permanente, .butoane_conditionate {
+    display: grid;
+    grid-template-columns: auto auto; 
+    align-items: center; 
+}
+
+.form-autentificare, .form-administrator {
+    background-image: linear-gradient(to right, rgb(240, 248, 255), rgb(206, 226, 243));
+    padding: 20px;
+    border: 1px dotted gray;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form-autentificare label, .form-administrator label {
+    font-size: 1.2em;
+    color: rgb(49, 51, 53);
+}
+
+.form-autentificare input, .form-administrator input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(101, 150, 117);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-autentificare button, .form-administrator button {
+    width: 100%;
+    font-size: 1em;
+}
+
+.autentificare {
+    background-image: url('clouds.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin: 0; 
+    padding: 0; 
+    width: 100%;
+}
+
+
+.eroare, .cos-gol {
+    color: red;
+    text-align: center;
+    margin: 10px;
+}
+
+.produse-cos {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.produse-cos th, .produse-cos td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.produse-cos th {
+    background-color: #93a394;
+}
+
+.produse-cos tr:hover {
+    background-color: #93a394;
+}
+
+.suma-totala {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
